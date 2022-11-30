@@ -12,13 +12,14 @@
         }
 
         a:hover {
-            background-color: black;
+            background-color: blue;
         }
 
         nav {
-            background-color: rgba(0, 98, 255, 0.827);
+            background-color: rgba(255, 0, 0, 0.827);
             padding: 20px;
             text-align: center;
+            border: 10px black;
         }
 
 
@@ -32,65 +33,91 @@
         aside {
             width: 20%;
             float: left;
-            background-color: rgba(12, 238, 227, 0.948);
+            background-color: red;
             height: 1000px;
         }
 
         main {
             width: 80%;
-            background-color: blueviolet;
+            background-color: black;
             float: left;
             height: 1000px;
         }
 
         footer {
-            background-color: yellow;
+            background-color: red;
             padding: 70px;
             text-align: center;
 
         }
-        
-      
+
+
 
         li {
             list-style: none;
             padding: 20px;
 
         }
+
         .sidenav {
             display: block;
             position: relative;
             top: 70px;
-            
-            
-        }
-         
-        .firstside{
-            border-radius: 100%; 
-        }
-        .firstside:hover{
-            box-shadow: 20px 5px 70px;
-            display: inline-block;
-                 
-        }
-        .secondside{
-            border-radius: 100%; 
-        }
-        .secondside:hover{
-            box-shadow: 20px 5px 70px;
-            display: inline-block;
-                 
+            right: 26px;
+            text-align: center;
+
         }
 
-        .thirdside{
-            border-radius: 100%; 
-        }
-        .thirdside:hover{
-            box-shadow: 20px 5px 70px;
-            display: inline-block;
-                 
+        .firstside {
+            border-radius: 100%;
         }
 
+        .firstside:hover {
+            box-shadow: 20px 5px 70px;
+            display: inline-block;
+
+        }
+
+        .secondside {
+            border-radius: 100%;
+        }
+
+        .secondside:hover {
+            box-shadow: 20px 5px 70px;
+            display: inline-block;
+
+        }
+
+        .thirdside {
+            border-radius: 100%;
+        }
+
+        .thirdside:hover {
+            box-shadow: 20px 5px 70px;
+            display: inline-block;
+
+        }
+
+        main {
+            color: white;
+            text-align: center;
+
+        }
+        .meals{
+            position: relative;
+            top: 30px;
+        }
+        ul li{
+            position: relative;
+            top: 25px;
+            display: inline;
+        }
+        img:hover{
+            box-shadow: 20px 5px 70px red;
+    
+        }
+            
+        }
     </style>
 </head>
 
@@ -110,42 +137,62 @@
     </nav>
     <aside>
         <div class="sidenav">
-                    <ul>
-                        <li class="firstside">
-                            <h2>Monday</h2>
-                            <p>Fried Rice</p>
-                            <p><s>$19.99</s> $14.99</p>
-                        </li>
-                        <li class="secondside">
-                            <h2>Tuesday</h2>
-                            <p>Fried Rice</p>
-                            <p><s>$21.99</s> $17.99</p>
-                        </li>
-                        <li  class="thirdside">
-                            <h2>Wednesday </h2>
-                            <p>Fried Rice</p>
-                            <p><s>$18.99</s> $12.99</p>
-                        </li>
-                        <li>
-                            <h2>Thursday</h2>
-                            <p>Fried Rice</p>
-                            <p><s>$17.99</s> $13.99</p>
-                        </li>
-                        <li>
-                            <h2>Friday</h2>
-                            <p>Fried Rice</p>
-                            <p><s>$14.99</s> $11.99</p>
-                        </li>
-                        <li>
-                            <h2>Weekend</h2>
-                            <p>Fried Rice</p>
-                            <p><s>$19.99</s> $14.99</p>
-                        </li>
-                    </ul>
-                </div>
+            <ul>
+                <li class="firstside">
+                    <h2>Monday</h2>
+                    <p>Fried Rice</p>
+                    <p><s>$19.99</s> $14.99</p>
+                </li>
+                <li class="secondside">
+                    <h2>Tuesday</h2>
+                    <p>Fried Rice</p>
+                    <p><s>$21.99</s> $17.99</p>
+                </li>
+                <li class="thirdside">
+                    <h2>Wednesday </h2>
+                    <p>Fried Rice</p>
+                    <p><s>$18.99</s> $12.99</p>
+                </li>
+                <li>
+                    <h2>Thursday</h2>
+                    <p>Fried Rice</p>
+                    <p><s>$17.99</s> $13.99</p>
+                </li>
+                <li>
+                    <h2>Friday</h2>
+                    <p>Fried Rice</p>
+                    <p><s>$14.99</s> $11.99</p>
+                </li>
+                <li>
+                    <h2>Weekend</h2>
+                    <p>Fried Rice</p>
+                    <p><s>$19.99</s> $14.99</p>
+                </li>
+            </ul>
+        </div>
     </aside>
     <main>
-        Main
+        <div class=meals>
+            <h1>Main</h1>
+            <ul>
+                <li>
+                    <img src="https://www.tasteofhome.com/wp-content/uploads/2018/01/Mixed-Berry-French-Toast-Bake_EXPS_BMMZ20_32343_E10_22_2b-7.jpg?resize=696,696" alt="Picture" width="100" height="10%">
+
+                </li>
+                <li>
+                    <img src="https://www.tasteofhome.com/wp-content/uploads/2018/01/exps24842_FR163878C01_05_5b-9.jpg?resize=700,700" alt="Picture" width="100" height="10%">
+                </li>
+                <li>
+                    <img src="https://www.tasteofhome.com/wp-content/uploads/2018/01/Cinnamon-Swirl-Bread_EXPS_CWFM18_10083_D10_12_6b-7.jpg?resize=696,696" alt="Picture" width="100" height="10%">
+                </li>
+                <li>
+                    <img src="https://www.tasteofhome.com/wp-content/uploads/2018/01/Corned-Beef-Hash-and-Eggs_EXPS_DIYDAP22_5360_DR_01_19_2b.jpg?resize=700,700" alt="Picture" width="100" height="10%">
+                </li>
+                <li>
+                    <img src="https://www.tasteofhome.com/wp-content/uploads/2018/01/Amish-Breakfast-Casserole_EXPS_H13X9BZ20_17826_06_24_E_2b-5.jpg?resize=696,696" alt="Picture" width="100" height="10%">
+                </li>
+            </ul>
+        </div>
     </main>
     <footer>
         footer
