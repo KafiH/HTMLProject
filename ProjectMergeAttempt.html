@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            
+        }
+
+        .nav{
+            list-style:none;
+            background-color:red;
+            display:flex;
+            justify-content: flex-end;
+            flex-wrap: wrap;
+        }
+        .nav a{
+            display:block;
+            padding:16px;
+            color:black;
+            text-decoration: none;
+        }
+        .nav a:hover:after{
+            content:normal
+        }
+
+        
+
+        main {
+            width: 90%;
+            background-color: black;
+            background-image: url("https://downloops.com/wp-content/uploads/edd/2018/03/MosaicBlue-Flowing-Mosaic-Pattern-Free-Download-Motion-Background-Video-Loop-SampleStill.jpg");
+            float: left;
+            height: 1000px;
+        }
+
+        footer {
+            background-color: lightblue;
+            padding: 200px;
+            text-align: center;
+
+        }
+
+
+
+        li {
+            list-style: none;
+            padding: 20px;
+
+        }
+
+        .sidenav {
+            display: block;
+            position: relative;
+            top: 70px;
+            right: 26px;
+            text-align: center;
+
+        }
+
+        
+
+    
+        aside {
+            width: 10%;
+            float: left;
+            background-color: white;
+            height: 1000px;
+        }
+
+        .firstside {
+            border-radius: 200px;
+            width:200px;
+            height:100%;
+        }
+
+        .firstside:hover {
+            box-shadow: 20px 5px 70px;
+            display: inline-block;
+            background-color:aquamarine;
+
+        }
+
+
+        .secondside {
+            border-radius: 200px;
+            width:200px;
+            height:100%;
+        }
+
+        .secondside:hover {
+            box-shadow: 20px 5px 70px;
+            display: inline-block;
+            background-color:aquamarine;
+
+        }
+        .thirdside {
+            border-radius: 200px;
+            width:200px;
+            height:100%;
+        }
+
+        .thirdside:hover {
+            box-shadow: 20px 5px 70px;
+            display: inline-block;
+            background-color:aquamarine;
+
+        }
+
+
+        .fourthside {
+            border-radius: 200px;
+            width:200px;
+            height:100%;
+        }
+
+        .fourthside:hover {
+            box-shadow: 20px 5px 70px;
+            display: inline-block;
+            background-color:aquamarine;
+
+        }
+
+        .fifthside {
+            border-radius: 200px;
+            width:200px;
+            height:100%;
+        }
+
+        .fifthside:hover {
+            box-shadow: 20px 5px 70px;
+            display: inline-block;
+            background-color:aquamarine;
+
+        }
+
+
+        .sixthside {
+            border-radius: 200px;
+            width:200px;
+            height:100%;
+        }
+
+        .sixthside:hover {
+            box-shadow: 20px 5px 70px;
+            display: inline-block;
+            background-color:aquamarine;
+
+        }
+
+        main {
+            color: white;
+            text-align: center;
+
+        }
+
+        .meals {
+            position: relative;
+            top: 30px;
+
+        }
+
+        ul {
+            position: absolute;
+            top: 10px;
+            left: 20px;
+        }
+
+        ul li {
+            position: relative;
+            top: 25px;
+            display: inline;
+        }
+
+
+
+        .story {
+            position: absolute;
+            top:80px;
+            left: 80px;
+
+            width: 500px;
+            font-size: 26px;
+            margin-bottom: 5px;
+        }
+        .mealstitle{
+            position: absolute;
+            font-size: 40px;
+            top:80px;
+            left: 1100px;
+        }
+
+        .hours {
+            position: absolute;
+            bottom: 1300px;
+            left: 1650px;
+
+            width: 500px;
+            font-size: 26px;
+            margin-bottom: 5px;
+        }
+        .day{
+            width:1100px;
+            position: absolute;
+            top: 650px;
+            left: 900px;
+            text-align: center;
+        }
+
+        .maincontainer {
+            position: relative;
+            width: 250px;
+            height: 320px;
+            top: 150px;
+
+
+        }
+
+        .thecard {
+            position: absolute;
+            width: 60%;
+            height: 60%;
+            transform-style: preserve-3d;
+            transition: all 0.5s ease;
+            background: yellow;
+        }
+
+        .thefront {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            background: yellow;
+            color: darkgray;
+
+        }
+
+        .theback {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            background: lightblue;
+            color: black;
+            transform: rotateY(180deg);
+        }
+
+        .thecard:hover {
+            transform: rotateY(180deg);
+            box-shadow: 10px 5px 60px white;
+        }
+
+        li {
+            width: 100%;
+        }
+
+        div {
+            height: 50px;
+            position: absolute;
+
+        }
+
+        .img1 {
+            position: absolute;
+            top: 10px;
+            left: 620px;
+
+        }
+
+        .img2 {
+            position: absolute;
+            top: 10px;
+            left: 820px;
+            z-index: 2;
+        }
+
+        .img3 {
+            position: absolute;
+            top: 10px;
+            left: 1020px;
+            z-index: 3;
+        }
+
+        .img4 {
+            position: absolute;
+            top: 10px;
+            left: 1220px;
+            z-index: 3;
+        }
+
+        .img5 {
+            position: absolute;
+            top: 10px;
+            left: 1420px;
+            z-index: 3;
+        }
+
+        .img6 {
+            position: absolute;
+            top: 10px;
+            left: 1620px;
+            z-index: 3;
+        }
+
+        .img7 {
+            position: absolute;
+            top: 10px;
+            left: 1820px;
+            z-index: 3;
+        }
+
+        .img8 {
+            position: absolute;
+            top: 10px;
+            left: 2020px;
+            z-index: 3;
+        }
+
+        .img9 {
+            position: absolute;
+            top: 240px;
+            left: 620px;
+
+        }
+
+        .img10 {
+            position: absolute;
+            top: 240px;
+            left: 820px;
+            z-index: 2;
+        }
+
+        .img11 {
+            position: absolute;
+            top: 240px;
+            left: 1020px;
+            z-index: 3;
+        }
+
+
+        .img12 {
+            position: absolute;
+            top: 240px;
+            left: 1420px;
+            z-index: 3;
+        }
+
+        .img13 {
+            position: absolute;
+            top: 240px;
+            left: 1620px;
+            z-index: 3;
+        }
+
+        .img14 {
+            position: absolute;
+            top: 240px;
+            left: 1820px;
+            z-index: 3;
+        }
+
+        .img15 {
+            position: absolute;
+            top: 240px;
+            left: 2020px;
+            z-index: 3;
+        }
+
+        .img16 {
+            position: absolute;
+            top: 240px;
+            left: 1220px;
+            z-index: 3;
+        }
+        
+    </style>
+</head>
+
+<body>
+   <header> 
+    <ul class="nav">
+           
+        <li>
+           <a href="#"><img src="data:image/png;base64,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" width="70px" height="40px" ></a>
+        <li>
+           <a href="menu.html">Menu</a>
+        </li>
+        <li>
+           <a href="contactinfo.html">Contact Information</a>
+        </li>
+        <li>
+            <a href="coupon.html">Coupons</a>
+         </li>
+    
+         <li>
+            <a href="#">Rewards</a>
+         </li>
+         <li>
+            <a href="order.html">Order online</a>
+         </li>
+        </ul>
+    </header>
+    <aside>
+    
+        <div class="sidenav">
+            <ul>
+                <li class="firstside">
+                    <h2>Monday</h2>
+                    <p>Fried Rice</p>
+                    <p><s>$19.99</s> $14.99</p>
+                </li>
+                <li class="secondside">
+                    <h2>Tuesday</h2>
+                    <p>Fried Rice</p>
+                    <p><s>$21.99</s> $17.99</p>
+                </li>
+                <li class="thirdside">
+                    <h2>Wednesday </h2>
+                    <p>Fried Rice</p>
+                    <p><s>$18.99</s> $12.99</p>
+                </li>
+                <li class="fourthside">
+                    <h2>Thursday</h2>
+                    <p>Fried Rice</p>
+                    <p><s>$17.99</s> $13.99</p>
+                </li>
+                <li class="fifthside">
+                    <h2>Friday</h2>
+                    <p>Fried Rice</p>
+                    <p><s>$14.99</s> $11.99</p>
+                </li>
+                <li class="sixthside">
+                    <h2>Weekend</h2>
+                    <p>Fried Rice</p>
+                    <p><s>$19.99</s> $14.99</p>
+                </li>
+            </ul>
+        </div>
+    </aside>
+    <main>
+        <div class=meals>
+            <h1 class="mealstitle">Our Delicious Breakfast Collection!</h1>
+            <ul>
+                <li class="img1">
+                    <div class="maincontainer">
+                        <div class="thecard">
+                            <div class="thefront"><img
+                                    src="https://www.tasteofhome.com/wp-content/uploads/2018/01/Scrambled-Egg-Hash-Brown-Cups_EXPS_TOHAS22_171940_DR_04_08_4b.jpg?resize=700,700"
+                                    alt="Picture" width="100%" height="100%"></div>
+                            <div class="theback">
+                                <h3>Scrambled Egg Hash Brown Cups</h3>
+                                <p>They may look like muffins, but these are your favorite rise-and-shine
+                                    ingredients—eggs, hash browns and bacon—into a single-serving cup.</p>
+                                <p><b>$13.99</b></p>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                </li>
+                <li class="img2">
+                    <div class="maincontainer">
+                        <div class="thecard">
+                            <div class="thefront"><img
+                                    src="https://www.tasteofhome.com/wp-content/uploads/2018/01/exps24842_FR163878C01_05_5b-9.jpg?resize=700,700"
+                                    alt="Picture" width="100%" height="100%"></div>
+                            <div class="theback">
+                                <h3>Rich Fruit Kuchens</h3>
+                                <p>This classic is such a part of our reunions, we designate a special place to serve
+                                    it. Five generations flock to the “Kuchen Room” for this coffee cake</p>
+                                <p><b>$10.99</b></p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </li>
+                <li class="img3">
+                    <div class="maincontainer">
+                        <div class="thecard">
+                            <div class="thefront"><img
+                                    src="https://www.tasteofhome.com/wp-content/uploads/2018/01/Mixed-Berry-French-Toast-Bake_EXPS_BMMZ20_32343_E10_22_2b-7.jpg?resize=696,696"
+                                    alt="Picture" width="100%" height="100%"></div>
+                            <div class="theback">
+                                <h3>Mixed Berry French Toast Bake</h3>
+                                <p>I love this recipe! It’s perfect for fuss-free holiday breakfasts or company—utterly
+                                    delicious and so easy to put together the night before.</p>
+                                <p><b>$12.99</b></p>
+                            </div>
+                        </div>
+
+                    </div>
+                </li>
+
+                <li class="img4">
+                    <div class="maincontainer">
+                        <div class="thecard">
+                            <div class="thefront"><img
+                                    src="https://www.tasteofhome.com/wp-content/uploads/2018/01/Corned-Beef-Hash-and-Eggs_EXPS_DIYDAP22_5360_DR_01_19_2b.jpg?resize=700,700"
+                                    alt="Picture" width="100%" height="100%"></div>
+                            <div class="theback">
+                                <h3>Corned Beef Hash and Eggs</h3>
+                                <p>Sunday breakfasts have always been special in our house. It’s fun to get in the
+                                    kitchen and cook with the kids.</p><br>
+                                <p><b>$7.99</b></p>
+                            </div>
+                        </div>
+
+                    </div>
+                </li>
+                <br><br>
+                <li class="img5">
+                    <div class="maincontainer">
+                        <div class="thecard">
+                            <div class="thefront"><img
+                                    src="https://www.tasteofhome.com/wp-content/uploads/2022/01/Cinnamon-Breakfast-Bites_EXPS_FT21_11959_F_0224_1_based-on.jpg?resize=700,700"
+                                    alt="Picture" width="100%" height="100%"></div>
+                            <div class="theback">
+                                <h3>Air-Fryer Cinnamon Breakfast Bites</h3>
+                                <p>These breakfast treats are so quick and easy to make and the air fryer gives this a
+                                    crispy, sugary coating that’s hard to resist.</p>
+                                <p><b>$11.99</b></p>
+                            </div>
+                        </div>
+
+                    </div>
+                </li>
+                <li class="img6">
+                    <div class="maincontainer">
+                        <div class="thecard">
+                            <div class="thefront"><img
+                                    src="https://www.tasteofhome.com/wp-content/uploads/2018/01/Early-Riser-Oven-Omelet_EXPS_CISMZ20_22661_E12_17_2b-13.jpg?resize=700,700"
+                                    alt="Picture" width="100%" height="100%"></div>
+                            <div class="theback">
+                                <h3>Early-Riser Oven Omelet</h3>
+                                <p>Everyone will rush to the table when you serve this big fluffy omelet. Packed with
+                                    tomato, broccoli, ham and cheese!</p><br>
+                                <p><b>$6.99</b></p>
+                            </div>
+                        </div>
+
+                    </div>
+                </li>
+
+                <li class="img7">
+                    <div class="maincontainer">
+                        <div class="thecard">
+                            <div class="thefront"><img
+                                    src="https://www.tasteofhome.com/wp-content/uploads/2018/01/True-Belgian-Waffles_EXPS_GHBZ18_4869_C08_09_2b-13.jpg?resize=700,700"
+                                    alt="Picture" width="100%" height="100%"></div>
+                            <div class="theback">
+                                <h3>True Belgian Waffles</h3>
+                                <p>hese homemade waffles are fantastic with any kind of topping: blueberries,
+                                    strawberries, powdered sugar or whipped topping. </p>
+                                <p><b>$16.99</b></p>
+                            </div>
+                        </div>
+
+                    </div>
+                </li>
+                <li class="img8">
+                    <div class="maincontainer">
+                        <div class="thecard">
+                            <div class="thefront"><img
+                                    src="https://www.tasteofhome.com/wp-content/uploads/2018/01/exps5554_KAC2379526C05_16_5b_WEB-13.jpg?resize=700,700"
+                                    alt="Picture" width="100%" height="100%"></div>
+                            <div class="theback">
+                                <h3>Toad in the Hole</h3>
+                                <p>this fun egg-in-a-hole is sure to please. My “little ones” are now grown but this
+                                    continues to be a traditional standby in my home and theirs.</p><br>
+                                <p><b>$11.99</b></p>
+                            </div>
+                        </div>
+
+                    </div>
+                </li>
+
+
+                <li class="img9">
+                    <div class="maincontainer">
+                        <div class="thecard">
+                            <div class="thefront"><img
+                                    src="https://www.tasteofhome.com/wp-content/uploads/2018/01/exps8441_THCA2916394B04_02_3b_WEB-1.jpg?resize=700,700"
+                                    alt="Picture" width="100%" height="100%"></div>
+                            <div class="theback">
+                                <h3>Cheesy Hash Brown Egg Casserole with Bacon</h3>
+                                <p>Hash brown casseroles are nice enough for a special brunch and versatile enough for a
+                                    satisfying supper.</p>
+                                <p><b>$8.99</b></p>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                </li>
+                <li class="img10">
+                    <div class="maincontainer">
+                        <div class="thecard">
+                            <div class="thefront"><img
+                                    src="https://www.tasteofhome.com/wp-content/uploads/2018/01/Lemon-Crumb-Muffins_EXPS_MCSMZ17_40157_C01_06_2b-5.jpg?resize=696,696"
+                                    alt="Picture" width="100%" height="100%"></div>
+                            <div class="theback">
+                                <h3>Lemon Crumb Muffins</h3>
+                                <p>They bake up in just 20 minutes and taste delicious warm. Their cakelike texture
+                                    makes them perfect for breakfast, dessert or snacking. </p>
+                                <p><b>$15.99</b></p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </li>
+                <li class="img11">
+                    <div class="maincontainer">
+                        <div class="thecard">
+                            <div class="thefront"><img
+                                    src="https://www.tasteofhome.com/wp-content/uploads/2018/01/Lemon-Blueberry-Bread_EXPS_GHBZ18_414_B08_15_6b-5.jpg?resize=696,696"
+                                    alt="Picture" width="100%" height="100%"></div>
+                            <div class="theback">
+                                <h3>Lemon Blueberry Bread</h3>
+                                <p>Of all the quick breads we had growing up, this beautiful lemon blueberry bread is
+                                    the best! The citrus glaze adds a lustrous finish and locks in moisture.</p>
+                                <p><b>$14.99</b></p>
+                            </div>
+                        </div>
+
+                    </div>
+                </li>
+
+                <li class="img12">
+                    <div class="maincontainer">
+                        <div class="thecard">
+                            <div class="thefront"><img
+                                    src="https://www.tasteofhome.com/wp-content/uploads/2022/11/Basic-Banana-Muffins.png?resize=700,697"
+                                    alt="Picture" width="100%" height="100%"></div>
+                            <div class="theback">
+                                <h3>Basic Banana Muffins</h3>
+                                <p>This banana muffin recipe goes over so well with kids. Not only are these banana
+                                    bread muffins like cupcakes.</p><br>
+                                <p><b>$5.99</b></p>
+                            </div>
+                        </div>
+
+                    </div>
+                </li>
+                <br><br>
+                <li class="img13">
+                    <div class="maincontainer">
+                        <div class="thecard">
+                            <div class="thefront"><img
+                                    src="https://www.tasteofhome.com/wp-content/uploads/2018/01/Fluffy-Pancakes_EXPS_TOHcom21_7539_G11_19_9b-16.jpg?resize=700,700"
+                                    alt="Picture" width="100%" height="100%"></div>
+                            <div class="theback">
+                                <h3>Fluffy Pancakes</h3>
+                                <p>Old family favorites and adapted it to make a small amount. It's quick and easy to
+                                    prepare, but we still consider it a special treat.</p><br>
+                                <p><b>$15.99</b></p>
+                            </div>
+                        </div>
+
+                    </div>
+                </li>
+                <li class="img14">
+                    <div class="maincontainer">
+                        <div class="thecard">
+                            <div class="thefront"><img
+                                    src="https://www.tasteofhome.com/wp-content/uploads/2020/10/The-Best-French-Toast_EXPS_TOHFM21_256104_E09_24_9b-6.jpg?resize=696,696"
+                                    alt="Picture" width="100%" height="100%"></div>
+                            <div class="theback">
+                                <h3>The Best French Toast</h3><br>
+                                <p>The caramelized exterior meets a soft custardlike center that practically melts in
+                                    your mouth. </p><br>
+                                <p><b>$12.99</b></p>
+                            </div>
+                        </div>
+
+                    </div>
+                </li>
+
+                <li class="img15">
+                    <div class="maincontainer">
+                        <div class="thecard">
+                            <div class="thefront"><img
+                                    src="https://www.tasteofhome.com/wp-content/uploads/2018/01/Baked-Cheddar-Eggs-Potatoes_EXPS_CWFM19_134913_C10_12_5b-6.jpg?resize=696,696"
+                                    alt="Picture" width="100%" height="100%"></div>
+                            <div class="theback">
+                                <h3>Baked Cheddar Eggs & Potatoes</h3>
+                                <p>This combo with potatoes and cheese that's started in a skillet on the stovetop and
+                                    then popped into the oven to bake.</p><br>
+                                <p><b>$9.99</b></p>
+                            </div>
+                        </div>
+
+                    </div>
+                </li>
+                <li class="img16">
+                    <div class="maincontainer">
+                        <div class="thecard">
+                            <div class="thefront"><img
+                                    src="https://www.tasteofhome.com/wp-content/uploads/2018/01/Breakfast-Wraps_EXPS_TOHPP19_35683_B08_23_6b-6.jpg?resize=696,696"
+                                    alt="Picture" width="100%" height="100%"></div>
+                            <div class="theback">
+                                <h3>Breakfast Wraps</h3><br>
+                                <p>We like quick and simple morning meals during the week, and these wraps are great
+                                    when prepared ahead of time. </p><br>
+                                <p><b>7.99</b></p>
+                            </div>
+                        </div>
+
+                    </div>
+                </li>
+
+            </ul>
+            <div class="story">
+                <h2>Our Story</h2>
+                <p>Miss Molly’s is a fully licensed family-run diner that has been serving the community for over 40
+                    years! We serve all-day breakfast starting at 6:00 am on weekdays and 7:00 am on weekends. </p> <br>
+
+                <p> Our lunch/dinner menu includes items like pizza, burgers, wings, salads & recently includes Lebanese
+                    cuisine such as shawarma sandwiches, platters & poutines, as well as desserts & appetizers.</p><br>
+
+                <p> We offer quick pick up and delivery off of our own online ordering system for our entire menu.</p>
+                <br>
+
+                <p> Please feel free to contact us via phone at (613)366-5548 for any inquiries regarding Miss Molly’s
+                    and we hope to see you soon!</p> <br>
+            </div>
+            <div class="day">
+                <h2>"Breakfast is the most important meal of the day. When you feed yourself what your body needs when it needs it, that's love. So give your bod some TLC and sit down and enjoy a good, substantial breakfast."</h2>
+            </div>
+            <div class="hours">
+                <h2>Our Hours</h2>
+                <p>Hours may change during holidays or special occasions.
+                    Please contact the establishment for specific information.</p><br>
+                <p> Monday:6:00 AM - 8:00 PM </p><br>
+                <p> Tuesday:6:00 AM - 8:00 PM</p><br>
+                <p> Wednesday:6:00 AM - 8:00 PM </p><br>
+                <p> Thursday:6:00 AM - 8:00 PM </p><br>
+                <p> Friday:6:00 AM - 8:00 PM </p><br>
+                <p> Saturday:7:00 AM - 8:00 PM </p><br>
+                <p> Sunday:7:00 AM - 2:00 PM</p><br>
+            </div>
+        </div>
+    </main>
+    <footer>
+        footer
+    </footer>
+</body>
+
+</html>
