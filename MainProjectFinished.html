@@ -9,33 +9,35 @@
     <style>
         * {
             margin: 0px;
-            
+
         }
+
 
         a:hover {
             background-color: rgb(1, 117, 171);
             color: white;
         }
 
-        .nav{
-            list-style:none;
-            background-color:rgb(1, 117, 171);
+        .nav {
+            list-style: none;
+            background-color: rgb(1, 117, 171);
             height: 100px;
             width: 100%;
             z-index: 3;
-            position: relative; 
-            bottom:30px;
-            float:right;
+            position: relative;
+            bottom: 30px;
+            float: right;
         }
-        .nav a:hover:after{
-            content:normal
+
+        .nav a:hover:after {
+            content: normal
         }
 
 
-        .nav a{
-            
-            padding:16px;
-            color:black;
+        .nav a {
+
+            padding: 16px;
+            color: black;
             text-decoration: none;
         }
 
@@ -78,33 +80,91 @@
 
         }
 
+        aside {
+            width: 10%;
+            float: left;
+            background-color: white;
+            height: 1000px;
+        }
+
         .firstside {
-            border-radius: 100%;
+            border-radius: 200px;
+            width: 200px;
+            height: 100%;
         }
 
         .firstside:hover {
             box-shadow: 20px 5px 70px;
             display: inline-block;
+            background-color: aquamarine;
 
         }
 
+
         .secondside {
-            border-radius: 100%;
+            border-radius: 200px;
+            width: 200px;
+            height: 100%;
         }
 
         .secondside:hover {
             box-shadow: 20px 5px 70px;
             display: inline-block;
+            background-color: aquamarine;
 
         }
 
         .thirdside {
-            border-radius: 100%;
+            border-radius: 200px;
+            width: 200px;
+            height: 100%;
         }
 
         .thirdside:hover {
             box-shadow: 20px 5px 70px;
             display: inline-block;
+            background-color: aquamarine;
+
+        }
+
+
+        .fourthside {
+            border-radius: 200px;
+            width: 200px;
+            height: 100%;
+        }
+
+        .fourthside:hover {
+            box-shadow: 20px 5px 70px;
+            display: inline-block;
+            background-color: aquamarine;
+
+        }
+
+        .fifthside {
+            border-radius: 200px;
+            width: 200px;
+            height: 100%;
+        }
+
+        .fifthside:hover {
+            box-shadow: 20px 5px 70px;
+            display: inline-block;
+            background-color: aquamarine;
+
+        }
+
+
+        .sixthside {
+            border-radius: 200px;
+            width: 200px;
+            height: 100%;
+        }
+
+        .sixthside:hover {
+            box-shadow: 20px 5px 70px;
+            display: inline-block;
+            background-color: aquamarine;
 
         }
 
@@ -136,17 +196,18 @@
 
         .story {
             position: absolute;
-            top:80px;
+            top: 80px;
             left: 80px;
 
             width: 500px;
             font-size: 26px;
             margin-bottom: 5px;
         }
-        .mealstitle{
+
+        .mealstitle {
             position: absolute;
             font-size: 40px;
-            top:80px;
+            top: 80px;
             left: 1100px;
         }
 
@@ -159,8 +220,9 @@
             font-size: 26px;
             margin-bottom: 5px;
         }
-        .day{
-            width:1100px;
+
+        .day {
+            width: 1100px;
             position: absolute;
             top: 650px;
             left: 900px;
@@ -332,6 +394,30 @@
             left: 1220px;
             z-index: 3;
         }
+
+        footer {
+            display: flex;
+            width: 100%;
+
+            justify-content: space-around;
+            flex-direction: row;
+            align-items: center;
+            border-top-style: solid;
+            color: rgb(1, 117, 171);
+
+
+
+
+            background-color: rgb(1, 117, 171);
+            height: 100%;
+            position: relative;
+           
+        }
+        .link{
+            position:absolute;
+            top: 10px;
+            color: white;
+        }
         
     </style>
 </head>
@@ -339,27 +425,29 @@
 <body>
     <header>
         <ul class="nav">
-           
+
             <li>
-               <a href="#"><img src="data:image/png;base64,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" width="70px" height="40px" ></a>
+                <a href="#"><img
+                        src="data:image/png;base64,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"
+                        width="70px" height="40px"></a>
             <li>
-               <a href="menu.html">Menu</a>
+                <a href="menu.html">Menu</a>
             </li>
             <li>
-               <a href="contactinfo.html">Contact Information</a>
+                <a href="contactinfo.html">Contact Information</a>
             </li>
             <li>
                 <a href="coupon.html">Coupons</a>
-             </li>
-        
-             <li>
-                <a href="#">Rewards</a>
-             </li>
-             <li>
-                <a href="order.html">Order online</a>
-             </li>
+            </li>
 
-             
+            <li>
+                <a href="#">Rewards</a>
+            </li>
+            <li>
+                <a href="order.html">Order online</a>
+            </li>
+
+
     </header>
     <aside>
         <div class="sidenav">
@@ -379,17 +467,17 @@
                     <p>Fried Rice</p>
                     <p><s>$18.99</s> $12.99</p>
                 </li>
-                <li>
+                <li class="fourthside">
                     <h2>Thursday</h2>
                     <p>Fried Rice</p>
                     <p><s>$17.99</s> $13.99</p>
                 </li>
-                <li>
+                <li class="fifthside">
                     <h2>Friday</h2>
                     <p>Fried Rice</p>
                     <p><s>$14.99</s> $11.99</p>
                 </li>
-                <li>
+                <li class="sixthside">
                     <h2>Weekend</h2>
                     <p>Fried Rice</p>
                     <p><s>$19.99</s> $14.99</p>
@@ -688,7 +776,9 @@
                     and we hope to see you soon!</p> <br>
             </div>
             <div class="day">
-                <h2>"Breakfast is the most important meal of the day. When you feed yourself what your body needs when it needs it, that's love. So give your bod some TLC and sit down and enjoy a good, substantial breakfast."</h2>
+                <h2>"Breakfast is the most important meal of the day. When you feed yourself what your body needs when
+                    it needs it, that's love. So give your bod some TLC and sit down and enjoy a good, substantial
+                    breakfast."</h2>
             </div>
             <div class="hours">
                 <h2>Our Hours</h2>
@@ -705,7 +795,8 @@
         </div>
     </main>
     <footer>
-        footer
+        <a class="link"
+            href="https://www.google.com/maps/place/Domino's+Pizza/@45.2603845,-75.9084915,12z/data=!3m1!5s0x4ccdfcf320048779:0x3937e60703df8307!4m10!1m2!2m1!1sdominos!3m6!1s0x4ccdfd006d68159d:0xa95770deb861433!8m2!3d45.2603845!4d-75.7684158!15sCgdkb21pbm9zIgOIAQFaCSIHZG9taW5vc5IBFnBpenphX2RlbGl2ZXJ5X3NlcnZpY2XgAQA!16s%2Fg%2F11gmgqx48h">Maps</a>
     </footer>
 </body>
 
