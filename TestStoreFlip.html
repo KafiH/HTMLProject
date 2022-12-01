@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+        }
+
+        a:hover {
+            background-color: black;
+            color: white;
+        }
+
+        nav {
+            background-color: rgba(255, 0, 0, 0.827);
+            padding: 20px;
+            text-align: center;
+            border: 10px black;
+        }
+
+
+        nav a {
+            display: inline-block;
+            color: white;
+            text-decoration: none;
+            padding: 20px;
+        }
+
+        aside {
+            width: 10%;
+            float: left;
+            background-color: white;
+            height: 1000px;
+        }
+
+        main {
+            width: 90%;
+            background-color: black;
+            float: left;
+            height: 1000px;
+        }
+
+        footer {
+            background-color: red;
+            padding: 200px;
+            text-align: center;
+
+        }
+
+
+
+        li {
+            list-style: none;
+            padding: 20px;
+
+        }
+
+        .sidenav {
+            display: block;
+            position: relative;
+            top: 70px;
+            right: 26px;
+            text-align: center;
+
+        }
+
+        .firstside {
+            border-radius: 100%;
+        }
+
+        .firstside:hover {
+            box-shadow: 20px 5px 70px;
+            display: inline-block;
+
+        }
+
+        .secondside {
+            border-radius: 100%;
+        }
+
+        .secondside:hover {
+            box-shadow: 20px 5px 70px;
+            display: inline-block;
+
+        }
+
+        .thirdside {
+            border-radius: 100%;
+        }
+
+        .thirdside:hover {
+            box-shadow: 20px 5px 70px;
+            display: inline-block;
+
+        }
+
+        main {
+            color: white;
+            text-align: center;
+
+        }
+
+        .meals {
+            position: relative;
+            top: 30px;
+
+        }
+
+        ul li {
+            position: relative;
+            top: 25px;
+            display: inline;
+        }
+
+
+
+        .story {
+            position: relative;
+            bottom: 650px;
+            left: 130px;
+
+            width: 500px;
+            font-size: 26px;
+            margin-bottom: 5px;
+        }
+
+        .hours {
+            position: relative;
+            bottom: 1300px;
+            left: 1650px;
+
+            width: 500px;
+            font-size: 26px;
+            margin-bottom: 5px;
+        }
+
+        .maincontainer {
+            position: relative;
+            width: 250px;
+            height: 320px;
+
+
+        }
+
+        .thecard {
+            position: absolute;
+            width: 60%;
+            height: 60%;
+            transform-style: preserve-3d;
+            transition: all 0.5s ease;
+            background: yellow;
+        }
+
+        .thefront {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            background: yellow;
+            color: darkgray;
+
+        }
+
+        .theback {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            background: beige;
+            color: black;
+            transform: rotateY(180deg);
+        }
+
+        .thecard:hover {
+            transform: rotateY(180deg);
+            box-shadow: 10px 5px 60px orange;
+        }
+
+        li {
+            width: 100%;
+        }
+
+        div {
+            height: 50px;
+            position: relative;
+
+        }
+        .img1{
+            position: relative;
+            top: 20px;
+            left:100px ;
+        }
+        .img2{
+            position: relative;
+            top: -318px;
+            left:260px ;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <table>
+            <tr>
+                <td><a href=""><img src="https://static.thenounproject.com/png/704627-200.png" width="100"
+                            height="10%"></a></td>
+                <td><a href="">Link</a></td>
+                <td><a href="">Link</a></td>
+                <td><a href="">Link</a></td>
+                <td><a href="">Link</a></td>
+                <td><a href="">Link</a></td>
+            </tr>
+        </table>
+    </nav>
+    <aside>
+        <div class="sidenav">
+            <ul>
+                <li class="firstside">
+                    <h2>Monday</h2>
+                    <p>Fried Rice</p>
+                    <p><s>$19.99</s> $14.99</p>
+                </li>
+                <li class="secondside">
+                    <h2>Tuesday</h2>
+                    <p>Fried Rice</p>
+                    <p><s>$21.99</s> $17.99</p>
+                </li>
+                <li class="thirdside">
+                    <h2>Wednesday </h2>
+                    <p>Fried Rice</p>
+                    <p><s>$18.99</s> $12.99</p>
+                </li>
+                <li>
+                    <h2>Thursday</h2>
+                    <p>Fried Rice</p>
+                    <p><s>$17.99</s> $13.99</p>
+                </li>
+                <li>
+                    <h2>Friday</h2>
+                    <p>Fried Rice</p>
+                    <p><s>$14.99</s> $11.99</p>
+                </li>
+                <li>
+                    <h2>Weekend</h2>
+                    <p>Fried Rice</p>
+                    <p><s>$19.99</s> $14.99</p>
+                </li>
+            </ul>
+        </div>
+    </aside>
+    <main>
+        <div class=meals>
+            <h1>Our Food</h1>
+            <ul>
+                <li class="img1">
+                    <div class="maincontainer">
+                        <div class="thecard">
+                            <div class="thefront"><img
+                                    src="https://www.tasteofhome.com/wp-content/uploads/2018/01/Scrambled-Egg-Hash-Brown-Cups_EXPS_TOHAS22_171940_DR_04_08_4b.jpg?resize=700,700"
+                                    alt="Picture" width="100%" height="100%"></div>
+                            <div class="theback">
+                                <h3>Scrambled Egg Hash Brown Cups</h3>
+                                <p>They may look like muffins, but these are your favorite rise-and-shine
+                                    ingredients—eggs, hash browns and bacon—into a single-serving cup.</p>
+                                <p><b>$15.99</b></p>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                </li>
+                <li class="img2">
+                    <div class="maincontainer">
+                        <div class="thecard">
+                            <div class="thefront"><img
+                                    src="https://www.tasteofhome.com/wp-content/uploads/2018/01/Cinnamon-Swirl-Bread_EXPS_CWFM18_10083_D10_12_6b-7.jpg?resize=696,696"
+                                    alt="Picture" width="100%" height="100%"></div>
+                            <div class="theback">
+                                <h3>Scrambled Egg Hash Brown Cups</h3>
+                                <p>They may look like muffins, but these are your favorite rise-and-shine
+                                    ingredients—eggs, hash browns and bacon—into a single-serving cup.</p>
+                                <p><b>$15.99</b></p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </li>
+                <li>
+                    <img src="https://www.tasteofhome.com/wp-content/uploads/2018/01/Cinnamon-Swirl-Bread_EXPS_CWFM18_10083_D10_12_6b-7.jpg?resize=696,696"
+                        alt="Picture" width="150" height="20%">
+                </li>
+
+                <li>
+                    <img src="https://www.tasteofhome.com/wp-content/uploads/2018/01/Corned-Beef-Hash-and-Eggs_EXPS_DIYDAP22_5360_DR_01_19_2b.jpg?resize=700,700"
+                        alt="Picture" width="150" height="20%">
+                </li>
+                <br><br>
+                <li>
+                    <img src="https://www.tasteofhome.com/wp-content/uploads/2018/01/Amish-Breakfast-Casserole_EXPS_H13X9BZ20_17826_06_24_E_2b-5.jpg?resize=696,696"
+                        alt="Picture" width="150" height="20%">
+                </li>
+                <li>
+                    <img src="https://www.tasteofhome.com/wp-content/uploads/2018/01/Rhubarb-Streusel-Muffins_EXPS_FT20_17491_F_0617_1_HOME-1.jpg?resize=700,700"
+                        alt="Picture" width="150" height="20%">
+                </li>
+
+                <li>
+                    <img src="https://www.tasteofhome.com/wp-content/uploads/2019/06/Tuscan-Sun-Orange-Cranberry-Cake_EXPS_TOHCA19_131321_B03_20_3b-3.jpg?resize=700,700"
+                        alt="Picture" width="150" height="20%">
+                </li>
+                <li>
+                    <img src="https://www.tasteofhome.com/wp-content/uploads/2018/01/exps7590_MRR153791D09_22_2b-11.jpg?resize=696,696"
+                        alt="Picture" width="150" height="20%">
+                </li>
+                <br><br>
+                <li>
+                    <img src="https://www.tasteofhome.com/wp-content/uploads/2022/01/Cinnamon-Breakfast-Bites_EXPS_FT21_11959_F_0224_1_based-on.jpg?resize=700,700"
+                        alt="Picture" width="150" height="20%">
+                </li>
+                <li>
+                    <img src="https://www.tasteofhome.com/wp-content/uploads/2018/01/True-Belgian-Waffles_EXPS_GHBZ18_4869_C08_09_2b-13.jpg?resize=700,700"
+                        alt="Picture" width="150" height="20%">
+                </li>
+                <li>
+                    <img src="https://www.tasteofhome.com/wp-content/uploads/2020/06/The-Best-Quiche-Lorraine_EXPS_TOHON20_251767_B06_17_13b-2.jpg?resize=696,696"
+                        alt="Picture" width="150" height="20%">
+                </li>
+                <li>
+                    <img src="https://www.tasteofhome.com/wp-content/uploads/2018/01/exps5554_KAC2379526C05_16_5b_WEB-13.jpg?resize=700,700"
+                        alt="Picture" width="150" height="20%">
+                </li>
+                <br><br>
+                <li>
+                    <img src="https://www.tasteofhome.com/wp-content/uploads/2018/01/Hearty-Breakfast-Egg-Bake_EXPS_BMZ19_34450_B12_04_2b-3.jpg?resize=696,696"
+                        alt="Picture" width="150" height="20%">
+                </li>
+                <li>
+                    <img src="https://www.tasteofhome.com/wp-content/uploads/2018/01/Applesauce-Muffins_EXPS_FT20_17_F_0414_1_HOME-6.jpg?resize=696,696"
+                        alt="Picture" width="150" height="20%">
+                </li>
+                <li>
+                    <img src="https://www.tasteofhome.com/wp-content/uploads/2018/01/exps8441_THCA2916394B04_02_3b_WEB-1.jpg?resize=700,700"
+                        alt="Picture" width="150" height="20%">
+                </li>
+                <li>
+                    <img src="https://www.tasteofhome.com/wp-content/uploads/2018/01/Scrambled-Egg-Hash-Brown-Cups_EXPS_TOHAS22_171940_DR_04_08_4b.jpg?resize=700,700"
+                        alt="Picture" width="150" height="20%">
+                </li>
+                <br><br>
+
+            </ul>
+            <div class="story">
+                <h2>Our Story</h2>
+                <p>Miss Molly’s is a fully licensed family-run diner that has been serving the community for over 40
+                    years! We serve all-day breakfast starting at 6:00 am on weekdays and 7:00 am on weekends. </p> <br>
+
+                <p> Our lunch/dinner menu includes items like pizza, burgers, wings, salads & recently includes Lebanese
+                    cuisine such as shawarma sandwiches, platters & poutines, as well as desserts & appetizers.</p><br>
+
+                <p> We offer quick pick up and delivery off of our own online ordering system for our entire menu.</p>
+                <br>
+
+                <p> Please feel free to contact us via phone at (613)366-5548 for any inquiries regarding Miss Molly’s
+                    and we hope to see you soon!</p> <br>
+            </div>
+            <div class="hours">
+                <h2>Our Hours</h2>
+                <p>Hours may change during holidays or special occasions.
+                    Please contact the establishment for specific information.</p><br>
+                <p> Monday:6:00 AM - 8:00 PM </p><br>
+                <p> Tuesday:6:00 AM - 8:00 PM</p><br>
+                <p> Wednesday:6:00 AM - 8:00 PM </p><br>
+                <p> Thursday:6:00 AM - 8:00 PM </p><br>
+                <p> Friday:6:00 AM - 8:00 PM </p><br>
+                <p> Saturday:7:00 AM - 8:00 PM </p><br>
+                <p> Sunday:7:00 AM - 2:00 PM</p><br>
+            </div>
+        </div>
+    </main>
+    <footer>
+        footer
+    </footer>
+</body>
+
+</html>
